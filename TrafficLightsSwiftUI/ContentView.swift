@@ -56,7 +56,7 @@ struct ContentView: View {
     }
     
     private var button: some View {
-        Button { buttonPressed() } label: {
+        Button(action: buttonPressed) {
             Text(buttonLabel)
                 .padding(8)
                 .background(Color.blue)
